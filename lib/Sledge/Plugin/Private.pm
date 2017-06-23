@@ -2,7 +2,7 @@ package Sledge::Plugin::Private;
 
 use strict;
 use warnings;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub import {
     my $class = shift;
@@ -42,7 +42,7 @@ Sledge::Plugin::Private - plugin to add private HTTP response
  }
 
  # always private on POST request
- use Sledge::Plugin::NoCache 'POST';
+ use Sledge::Plugin::Private 'POST';
 
 =head1 DESCRIPTION
 
